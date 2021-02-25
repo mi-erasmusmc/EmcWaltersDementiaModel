@@ -1,0 +1,427 @@
+{
+  "ExpressionLimit": "First",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 442306,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "57194009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Adjustment disorder with depressed mood",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": true,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 436665,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "13746004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Bipolar disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 440383,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "35489007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Depressive disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4175329,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "42594001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Organic mood disorder of depressed type",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[HJ] Walters - Depression",
+      "id": 6
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 21604686,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "N06A",
+          "VOCABULARY_ID": "ATC",
+          "CONCEPT_NAME": "ANTIDEPRESSANTS",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "ATC 3rd",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "[HJ] Walters - Drugs to treat depression",
+      "id": 7
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 438407,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "78004001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Bulimia nervosa",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4311708,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "424736006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Diabetic peripheral neuropathy",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 434613,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "21897009",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Generalized anxiety disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 436962,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "193462001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Insomnia",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 440374,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "191736004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Obsessive-compulsive disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 436074,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "371631005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Panic disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 436676,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "47505003",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Posttraumatic stress disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4242733,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "596004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Premenstrual dysphoric disorder",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 440690,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "25501002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Social phobia",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[HJ] Walters - Other indications for drugs used to treat depression",
+      "id": 8
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4030840,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "23835007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Electroconvulsive therapy",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 2795842,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "GZB",
+            "VOCABULARY_ID": "ICD10PCS",
+            "CONCEPT_NAME": "Mental Health, Electroconvulsive Therapy",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "ICD10PCS",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 2795675,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "GZ5",
+            "VOCABULARY_ID": "ICD10PCS",
+            "CONCEPT_NAME": "Mental Health, Individual Psychotherapy",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "ICD10PCS",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4327941,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "75516001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Psychotherapy",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Procedure",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 45887951,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "1021137",
+            "VOCABULARY_ID": "CPT4",
+            "CONCEPT_NAME": "Psychotherapy Services and Procedures",
+            "DOMAIN_ID": "Procedure",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "CPT4 Hierarchy",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[HJ] Walters - Procedures for depression",
+      "id": 9
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "AdditionalCriteria": {
+    "CriteriaList": [
+      {
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": [
+            365,
+            -1
+          ],
+          "End": [
+            0,
+            1
+          ],
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": false,
+        "Criteria": {"ProcedureOccurrence": {
+          "CodesetId": 9,
+          "ProcedureTypeExclude": false
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      },
+      {
+        "RestrictVisit": false,
+        "StartWindow": {
+          "UseEventEnd": false,
+          "Start": [
+            365,
+            -1
+          ],
+          "End": [
+            0,
+            1
+          ],
+          "UseIndexEnd": false
+        },
+        "IgnoreObservationPeriod": false,
+        "Criteria": {"ConditionOccurrence": {
+          "ConditionTypeExclude": false,
+          "CodesetId": 6
+        }},
+        "Occurrence": {
+          "Type": 2,
+          "IsDistinct": false,
+          "Count": 1
+        }
+      }
+    ],
+    "Type": "ANY",
+    "DemographicCriteriaList": {"attr_class": "AsIs"},
+    "Groups": {"attr_class": "AsIs"}
+  },
+  "QualifiedLimit": "All",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DrugExposure": {
+      "CodesetId": 7,
+      "DrugTypeExclude": false
+    }}],
+    "PrimaryCriteriaLimit": "All",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

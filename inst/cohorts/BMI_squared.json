@@ -1,0 +1,50 @@
+{
+  "ExpressionLimit": "All",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [{
+      "isExcluded": false,
+      "concept": {
+        "INVALID_REASON_CAPTION": "Valid",
+        "CONCEPT_ID": 3038553,
+        "STANDARD_CONCEPT": "S",
+        "CONCEPT_CODE": "39156-5",
+        "VOCABULARY_ID": "LOINC",
+        "CONCEPT_NAME": "Body mass index (BMI) [Ratio]",
+        "DOMAIN_ID": "Measurement",
+        "STANDARD_CONCEPT_CAPTION": "Standard",
+        "CONCEPT_CLASS_ID": "Clinical Observation",
+        "INVALID_REASON": "V"
+      },
+      "includeMapped": false,
+      "includeDescendants": false
+    }]},
+    "name": "[HJ] Walters - BMI",
+    "id": 1
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "AdditionalCriteria": {
+    "CriteriaList": {"attr_class": "AsIs"},
+    "Type": "ALL",
+    "DemographicCriteriaList": {"attr_class": "AsIs"},
+    "Groups": {"attr_class": "AsIs"}
+  },
+  "QualifiedLimit": "Last",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [{"Measurement": {
+      "MeasurementTypeExclude": false,
+      "CodesetId": 1
+    }}],
+    "PrimaryCriteriaLimit": "All",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

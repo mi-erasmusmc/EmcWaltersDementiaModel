@@ -1,0 +1,149 @@
+{
+  "ExpressionLimit": "First",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4182210,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "52448006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 377788,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "51928006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "General paresis - neurosyphilis",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 372610,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "40425004",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Postconcussion syndrome",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 37116464,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "733184002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia caused by heavy metal exposure",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4244346,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "9345005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dialysis dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 37017247,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "713488003",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Presenile dementia co-occurrent with human immunodeficiency virus infection",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 37017549,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "713844000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia co-occurrent with human immunodeficiency virus infection",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[LEGEND HTN] Dementia",
+    "id": 10
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "QualifiedLimit": "First",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "CodesetId": 10,
+      "First": true
+    }}],
+    "PrimaryCriteriaLimit": "First",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

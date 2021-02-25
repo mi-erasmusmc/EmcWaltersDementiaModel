@@ -1,0 +1,2 @@
+targetCohortId,targetCohortName,outcomeId,outcomeName,modelName,analysisId
+18210,Walters Target 0 Prior 0 Post,7414,Persons with dementia,walters_dementia_model,1

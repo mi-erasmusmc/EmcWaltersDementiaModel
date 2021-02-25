@@ -1,0 +1,97 @@
+{
+  "ExpressionLimit": "All",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4052464,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "160618006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Current non-smoker",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": true,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4310250,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "8517006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Ex-smoker",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4222303,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "8392000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Non-smoker",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4144272,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "266919005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Never smoked tobacco",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[HJ] Walters - Smoking status: never",
+    "id": 1
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "QualifiedLimit": "First",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [{"Observation": {
+      "ObservationTypeExclude": false,
+      "CodesetId": 1
+    }}],
+    "PrimaryCriteriaLimit": "All",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

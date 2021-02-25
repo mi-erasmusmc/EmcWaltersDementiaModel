@@ -1,0 +1,782 @@
+{
+  "ExpressionLimit": "All",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4182210,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "52448006",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "Dementia",
+      "id": 0
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 9202,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OP",
+          "VOCABULARY_ID": "Visit",
+          "CONCEPT_NAME": "Outpatient Visit",
+          "DOMAIN_ID": "Visit",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Visit",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "outpatient visit",
+      "id": 1
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 443432,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "386806002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Impaired cognition",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4304008,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "386807006",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Memory impairment",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4164633,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "40917007",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Clouded consciousness",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "memory loss, confusion, cognitive decline",
+      "id": 2
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 374888,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "191519005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Dementia associated with another disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 380701,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "80098002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Diffuse Lewy body disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 439727,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "86406008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Human immunodeficiency virus infection",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 374341,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "58756001",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Huntington's chorea",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 4140090,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "32798002",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Parkinsonism",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 436092,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "13092008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Pick's disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "U"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "Exclusion diseases indicating subtypes of dementia",
+      "id": 3
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 21604792,
+          "STANDARD_CONCEPT": "C",
+          "CONCEPT_CODE": "N06D",
+          "VOCABULARY_ID": "ATC",
+          "CONCEPT_NAME": "ANTI-DEMENTIA DRUGS",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Classification",
+          "CONCEPT_CLASS_ID": "ATC 3rd",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "ATC Anti-dementia drugs",
+      "id": 4
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 378726,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "281004",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Dementia associated with alcoholism",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 376095,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "191493005",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Drug-induced dementia",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "drug-induced (and alcohol-induced) dementia",
+      "id": 5
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 374888,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "191519005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Dementia associated with another disease",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "dementia in other conditions NOS",
+      "id": 6
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4013106,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "165816005",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "HIV positive",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "HIV positive",
+      "id": 7
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 374341,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "58756001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Huntington's chorea",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "huntington's",
+      "id": 8
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 380701,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "80098002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Diffuse Lewy body disease",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "lewy body disease",
+      "id": 9
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 381270,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "49049000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Parkinson's disease",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "parkinson's",
+      "id": 11
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 436092,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "13092008",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Pick's disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "U"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 44782710,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "21921000119103",
+            "VOCABULARY_ID": "SNOMED",
+            "CONCEPT_NAME": "Dementia due to Pick's disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Clinical Finding",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "pick's",
+      "id": 12
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 36150370,
+            "STANDARD_CONCEPT": "C",
+            "CONCEPT_CODE": "10011382",
+            "VOCABULARY_ID": "MedDRA",
+            "CONCEPT_NAME": "Creutzfeld-Jacob disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Classification",
+            "CONCEPT_CLASS_ID": "LLT",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Invalid",
+            "CONCEPT_ID": 36774976,
+            "STANDARD_CONCEPT": "N",
+            "CONCEPT_CODE": "10012273",
+            "VOCABULARY_ID": "MedDRA",
+            "CONCEPT_NAME": "Dementia due to Creutzfeldt-Jacob disease",
+            "DOMAIN_ID": "Condition",
+            "STANDARD_CONCEPT_CAPTION": "Non-Standard",
+            "CONCEPT_CLASS_ID": "LLT",
+            "INVALID_REASON": "D"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "cruetzfeldt-jacob disease",
+      "id": 13
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "QualifiedLimit": "First",
+  "InclusionRules": [
+    {
+      "expression": {
+        "CriteriaList": [
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": -1,
+              "End": [
+                0,
+                1
+              ],
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "Criteria": {"ConditionOccurrence": {
+              "ConditionTypeExclude": false,
+              "CodesetId": 0
+            }},
+            "Occurrence": {
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": -1,
+              "End": [
+                0,
+                1
+              ],
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "Criteria": {"ConditionOccurrence": {
+              "ConditionTypeExclude": false,
+              "CodesetId": 2
+            }},
+            "Occurrence": {
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          }
+        ],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no prior dementia, memory loss, confusion, cognitive decline"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 5
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no prior drug-induced (and alcohol-induced) dementia"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 6
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no prior dementia in other conditions NOS"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 7
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no HIV positive"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 8
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no huntington's"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 9
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no lewy body disease"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 11
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no parkinson's"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 12
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no pick's"
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": -1,
+            "End": [
+              0,
+              1
+            ],
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": false,
+          "Criteria": {"ConditionOccurrence": {
+            "ConditionTypeExclude": false,
+            "CodesetId": 13
+          }},
+          "Occurrence": {
+            "Type": 2,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": {"attr_class": "AsIs"},
+        "Groups": {"attr_class": "AsIs"}
+      },
+      "name": "no cruetzfeldt-jacob disease"
+    }
+  ],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"VisitOccurrence": {
+      "CodesetId": 1,
+      "VisitTypeExclude": false,
+      "OccurrenceStartDate": [
+        "2014-01-01",
+        "lt"
+      ],
+      "Age": {
+        "Op": "bt",
+        "Extent": 79,
+        "Value": 60
+      }
+    }}],
+    "PrimaryCriteriaLimit": "Last",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

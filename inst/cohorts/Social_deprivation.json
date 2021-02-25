@@ -1,0 +1,80 @@
+{
+  "ExpressionLimit": "First",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4019836,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "105412007",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Social exclusion",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4019835,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "105411000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Social withdrawal",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4307117,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "423049000",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Social outcast",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "[HJ] Walters - Social deprivation",
+    "id": 2
+  }],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "QualifiedLimit": "First",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [{"ConditionOccurrence": {
+      "ConditionTypeExclude": false,
+      "CodesetId": 2
+    }}],
+    "PrimaryCriteriaLimit": "All",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

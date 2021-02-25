@@ -1,0 +1,73 @@
+{
+  "ExpressionLimit": "All",
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {},
+  "ConceptSets": [
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4218106,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "7200002",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "Alcoholism",
+          "DOMAIN_ID": "Condition",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Clinical Finding",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "[HJ] History of alcohol problem [CON]",
+      "id": 1
+    },
+    {
+      "expression": {"items": [{
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 4058714,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "161466001",
+          "VOCABULARY_ID": "SNOMED",
+          "CONCEPT_NAME": "H/O: alcoholism",
+          "DOMAIN_ID": "Observation",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Context-dependent",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }]},
+      "name": "[HJ] History of alcohol problem [OBS]",
+      "id": 2
+    }
+  ],
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": {"attr_class": "AsIs"},
+  "QualifiedLimit": "First",
+  "InclusionRules": {"attr_class": "AsIs"},
+  "PrimaryCriteria": {
+    "CriteriaList": [
+      {"ConditionOccurrence": {
+        "ConditionTypeExclude": false,
+        "CodesetId": 1
+      }},
+      {"Observation": {
+        "ObservationTypeExclude": false,
+        "CodesetId": 2
+      }}
+    ],
+    "PrimaryCriteriaLimit": "All",
+    "ObservationWindow": [
+      0,
+      0
+    ]
+  }
+}

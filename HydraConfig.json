@@ -1,0 +1,48 @@
+{
+  "skeletonType": "PatientLevelPredictionExistingStudy",
+  "skeletonVersion": "v0.0.1",
+  "requiredHydraVersion": "v0.0.3",
+  "actions":[{
+    "type": "fileNameFindAndReplace",
+    "input": "packageName",
+    "find": "EmcWaltersDementiaModel"
+  },{
+    "type": "stringFindAndReplace",
+    "input": "packageName",
+    "find": "EmcWaltersDementiaModel"
+  }
+  ,{
+    "type": "jsonArrayToCsv",
+    "input": "CohortsToCreate",
+    "mapping": [{"source": "id", "target": "cohortId"},
+                {"source": "id", "target": "atlasId"},
+                {"source": "name", "target": "name", "modifiers": ["convertToFileName"]}],
+    "output": "inst/settings/CohortsToCreate.csv"
+  },{
+    "type": "jsonArrayToCsv",
+    "input": "settings",
+    "mapping": [{"source": "targetCohortId", "target": "targetCohortId"},
+                {"source": "targetCohortName", "target": "targetCohortName"},
+                {"source": "outcomeId", "target": "outcomeId"},
+                {"source": "outcomeName", "target": "outcomeName"},
+                {"source": "modelName", "target": "modelName"},
+                {"source": "analysisId", "target": "analysisId"}],
+    "output": "inst/settings/settings.csv"
+  },{
+    "type": "jsonArrayToJson",
+    "input": "cohortDefinitions",
+    "fileName": "name",
+    "payload": "expression",
+    "output": "inst/cohorts"
+  },{
+    "type": "jsonArrayToSql",
+    "input": "cohortDefinitions",
+    "fileName": "name",
+    "payload": "expressionSql",
+    "output": "inst/sql/sql_server"
+  },{
+  "type": "jsonToJson",
+  "input": "",
+  "output": "inst/settings/existingModelList.json"
+} ]
+}
