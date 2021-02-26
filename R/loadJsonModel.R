@@ -19,6 +19,8 @@ evalFunction <- function(list){
 
 processModelJson <- function(json, cohortDatabaseSchema, cohortTable){
 
+  createCovariateSettings <- FeatureExtraction::createCovariateSettings
+  
   covariateSettings <- list()
   length(covariateSettings) <- sum(unlist(lapply(1:length(json$covariateSettings), function(i) ifelse(class(json$covariateSettings[[i]][[1]])!='list', 1, length(json$covariateSettings[[i]])))))
   k <- 1

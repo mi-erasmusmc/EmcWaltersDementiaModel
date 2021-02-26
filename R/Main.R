@@ -185,7 +185,9 @@ execute <- function(connectionDetails,
                                    cohortCovariateDatabaseSchema = cohortDatabaseSchema,
                                    cohortCovariateTable = cohortTable,
                                    getPlpSettings = plpDataSettings, 
-                                   createPopulationSettings = createPopulationSettings)},
+                                   createPopulationSettings = createPopulationSettings,
+                                   outputFolder = outputFolder,
+                                   cdmDatabaseName = cdmDatabaseName)},
                          error = function(e){ParallelLogger::logError(e); return(NULL)})
       
       
