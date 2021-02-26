@@ -143,14 +143,36 @@ predictFunction.glm <- function(coefficients,
   
   finalMapping <- eval(str2lang(paste0(finalMapping, collapse = ' ')))
   
+  offset <- c(27.501, 
+              27.501,
+              0, 0, 0, 0,
+              0, 0, 0, 0, 0, 0, 
+              65.608,
+              0,
+              0)
+  
+  exponent <- c(1,
+                2,
+                1, 1, 1, 1,
+                1, 1, 1, 1, 1, 1,
+                1,
+                1,
+                1)
+  
+  coefficients$offset <- offset
+  coefficients$exponent <- exponent
+  
   predictionFunction <- function(plpData, population, coeff = coefficients, type = predictionType){
     
     plpData$covariateData$coefficients <- coeff
     on.exit(plpData$covariateData$coefficients <- NULL, add = TRUE)
     
+    popTemp <- population[c("rowId", "cohortStartDate")]
+    popTemp$indexCovariate <- format(as.Date(popTemp$cohortStartDate, format="%Y/%m/%d"),"%Y")
+    
     prediction <- plpData$covariateData$covariates %>% 
       dplyr::inner_join(plpData$covariateData$coefficients, by= 'covariateId') %>% 
-      dplyr::mutate(values = covariateValue*points) %>%
+      dplyr::mutate(values = ((covariateValue-offset)**exponent)*points) %>%
       dplyr::group_by(rowId) %>%
       dplyr::summarise(value = sum(values, na.rm = TRUE)) %>%
       dplyr::select(rowId, value) %>% 
@@ -159,8 +181,10 @@ predictFunction.glm <- function(coefficients,
     prediction <- merge(population, prediction, by ="rowId", all.x = TRUE)
     prediction$value[is.na(prediction$value)] <- 0
     
+    prediction$indexCovariate <- 0.04477 * (as.numeric(popTemp$indexCovariate) - 2003.719)
+    
     # add any final mapping here (e.g., add intercept and mapping)
-    prediction$value <- finalMapping(prediction$value)
+    prediction$value <- finalMapping(prediction$value + prediction$indexCovariate)
     
     metaData <- list(predictionType = type,
                      cohortId = attr(population,'metaData')$cohortId,
