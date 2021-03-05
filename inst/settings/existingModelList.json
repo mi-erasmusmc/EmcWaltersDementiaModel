@@ -2783,6 +2783,14 @@
           "analysisId": 456
         }
       ],
+      "createSmokingCovariateSettings": [{
+        "startDay": -1825,
+        "covariateName": "Smoking status",
+        "endDay": 0,
+        "analysisId": 9898,
+        "smokerConceptSet": 4298794,
+        "exsmokerConceptSet": 4310250
+      }],
       "createAgeCovariateSettings": [{
         "covariateName": "age_squared",
         "covariateId": 1458,

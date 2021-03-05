@@ -56,4 +56,4 @@ reference:
       - getCohortCovariateData
       - getMeasurementCovariateData
       - getMeasurementCohortCovariateData
-      
+      - getSmokingCovariateData

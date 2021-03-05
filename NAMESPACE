@@ -3,6 +3,7 @@
 export(createCohorts)
 export(execute)
 export(getAgeCovariateData)
+export(getSmokingCovariateData)
 export(getCohortCovariateData)
 export(getMeasurementCohortCovariateData)
 export(getMeasurementCovariateData)
