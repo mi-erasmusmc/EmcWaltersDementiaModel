@@ -47,7 +47,7 @@ getSmokingCovariateData <- function(connection,
   sql <- paste("select lastdates.row_id, ",
                "case when alldates.concept_id in (@smokercodes) then 1000+@analysisId",
                " when alldates.concept_id in (@exsmokercodes) then 2000+@analysisId else 0 end as covariate_id, ",
-               "1 as value from ",
+               "1 as covariate_value from ",
                
                "(select c.@row_id_field AS row_id, d.person_id, max(d.date) as date from ",
                "(select person_id, condition_start_date as date from @cdm_database_schema.condition_occurrence where condition_concept_id in (@allCodes) union ",
@@ -116,8 +116,17 @@ getSmokingCovariateData <- function(connection,
 
 createSmokingCovariateSettings <- function(covariateName = 'Smoking status',
                                            startDay=-1825, endDay=0, 
-                                           smokerConceptSet = c(4298794),
-                                           exsmokerConceptSet = c(4310250),
+                                           smokerConceptSet = c(762498,762499,764103,764104,
+                                                                4041511,4042037,4044775,4044776,
+                                                                4044777,4044778,4052029,4052030,
+                                                                4052947,4058136,4058138,4141787,4144273,
+                                                                4204653,4209006,4209585,4218917,4246415,
+                                                                4276526,4298794,37395605),
+                                           exsmokerConceptSet = c(762500,762501,4052465,4052949,4092281,
+                                                                  4141782,4141783,4141784,4145798,4148415,
+                                                                  4148416,4207221,4232375,4237385,4310250,
+                                                                  35610339,35610340,35610343,35610345,35610347,
+                                                                  35610349,42536346,44802113,46270534),
                                            analysisId = 477
 ) {
   

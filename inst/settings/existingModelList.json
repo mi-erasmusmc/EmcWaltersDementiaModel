@@ -2788,8 +2788,17 @@
         "covariateName": "Smoking status",
         "endDay": 0,
         "analysisId": 9898,
-        "smokerConceptSet": 4298794,
-        "exsmokerConceptSet": 4310250
+        "smokerConceptSet": [762498,762499,764103,764104,
+                            4041511,4042037,4044775,4044776,
+                            4044777,4044778,4052029,4052030,
+                            4052947,4058136,4058138,4141787,4144273,
+                            4204653,4209006,4209585,4218917,4246415,
+                            4276526,4298794,37395605],
+        "exsmokerConceptSet": [762500,762501,4052465,4052949,4092281,
+                              4141782,4141783,4141784,4145798,4148415,
+                              4148416,4207221,4232375,4237385,4310250,
+                              35610339,35610340,35610343,35610345,35610347,
+                              35610349,42536346,44802113,46270534]
       }],
       "createAgeCovariateSettings": [{
         "covariateName": "age_squared",
@@ -57120,13 +57129,13 @@
             "covariateId": 18207456,
             "attr_row.names": 4,
             "attr_class": "data.frame",
-            "points": -0.0679
+            "points": 0
           },
           {
             "covariateId": 18206456,
             "attr_row.names": 5,
             "attr_class": "data.frame",
-            "points": -0.0866
+            "points": 0
           },
           {
             "covariateId": 18208456,
@@ -57187,6 +57196,18 @@
             "attr_row.names": 15,
             "attr_class": "data.frame",
             "points": -0.0034
+          },
+          {
+            "covariateId": 10898,
+            "attr_row.names": 16,
+            "attr_class": "data.frame",
+            "points": -0.0866
+          },
+          {
+            "covariateId": 11898,
+            "attr_row.names": 17,
+            "attr_class": "data.frame",
+            "points": -0.0679
           }
         ],
         "finalMapping": "function(x){return(1-0.9969^exp(x))}"

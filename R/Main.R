@@ -195,7 +195,58 @@ execute <- function(connectionDetails,
       if(!is.null(result)){
  
       if(recalibrate){
-        # add code here
+        predictionWeak <- result$prediction
+        predictionWeak$value <- with(predictionWeak, replace(value, value >= 0.9999, 0.9999))
+        
+        ### Extract data
+        
+        # this has to be modified per model...
+        #1- 0.9533^exp(x-86.61) = p
+        #log(log(1-p)/log(0.9533))+86.61 = x
+        
+        # predictionWeak$value[predictionWeak$value == 1] <- 0.9999999999
+        
+        lp <- log(log(1-predictionWeak$value)/log(0.9969))
+        
+        #t <- predictionWeak$survivalTime # observed follow up time
+        t <- apply(cbind(predictionWeak$daysToCohortEnd, predictionWeak$survivalTime), 1, min)
+        
+        y <- ifelse(predictionWeak$outcomeCount>0,1,0)  # observed outcome
+        
+        extras <- c()
+        # for(yrs in c(5)){
+        yrs <- 5
+        t_temp <- t
+        y_temp <- y
+        y_temp[t_temp>365*yrs] <- 0
+        t_temp[t_temp>365*yrs] <- 365*yrs
+        S<- survival::Surv(t_temp, y_temp) 
+        #### Intercept + Slope recalibration
+        f.slope <- survival::coxph(S~lp)
+        h.slope <- max(survival::basehaz(f.slope)$hazard)  # maximum OK because of prediction_horizon
+        lp.slope <- stats::predict(f.slope)
+        p.slope.recal <- 1-exp(-h.slope*exp(lp.slope))
+        predictionWeak$value <- p.slope.recal
+        predictionWeak$new <- p.slope.recal
+        colnames(predictionWeak)[ncol(predictionWeak)] <- paste0('value',yrs,'year')
+        
+        # TODO save the recalibration stuff somewhere?
+        extras <- rbind(extras,
+                        c(analysisSettings$analysisId[i],"validation",paste0("h.slope_",yrs),h.slope),
+                        c(analysisSettings$analysisId[i],"validation",paste0("f.slope_",yrs),f.slope$coefficients['lp']))
+        
+        # }
+        result$prediction <- predictionWeak # use 10 year prediction value
+        plpData <- PatientLevelPrediction::loadPlpData(file.path(outputFolder,cdmDatabaseName, 'plpData'))
+  
+        performance <- PatientLevelPrediction::evaluatePlp(result$prediction, plpData)
+        
+        # reformatting the performance 
+        # performance <- PatientLevelPrediction:::reformatPerformance(performance,analysisSettings$analysisId[i])
+        
+        result$performanceEvaluation <- performance
+        
+        result$performanceEvaluation$evaluationStatistics <- rbind(result$performanceEvaluation$evaluationStatistics,extras)      
       }
       
       if(!dir.exists(file.path(outputFolder,cdmDatabaseName))){
