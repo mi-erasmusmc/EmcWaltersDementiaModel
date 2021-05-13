@@ -1152,10 +1152,10 @@
     },
     "textshaping": {
       "Package": "textshaping",
-      "Version": "0.3.4",
+      "Version": "0.3.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "b47ec0c0b55d1cf4d5b8f2da3fe2024e"
+      "Hash": "fff317575e7191e2d077292309bed575"
     },
     "tibble": {
       "Package": "tibble",
