@@ -54,8 +54,14 @@
     "FeatureExtraction": {
       "Package": "FeatureExtraction",
       "Version": "3.1.1",
-      "Source": "unknown",
-      "Hash": "e526e1254ecb19d1363ff27a4ef7886d"
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "FeatureExtraction",
+      "RemoteRef": "master",
+      "RemoteSha": "7e615050508bd1915e8437cf98fceacacbda4b9c",
+      "Hash": "232fe80c9c662c227b614c3cf6050464"
     },
     "Formula": {
       "Package": "Formula",
@@ -132,10 +138,16 @@
     },
     "PatientLevelPrediction": {
       "Package": "PatientLevelPrediction",
-      "Version": "4.3.9",
-      "Source": "unknown",
+      "Version": "4.3.7",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "ohdsi",
+      "RemoteRepo": "PatientLevelPrediction",
+      "RemoteRef": "master",
+      "RemoteSha": "14cf29ed4064698a896cea146a5c3be3835af305",
       "Remotes": "ohdsi/FeatureExtraction, ohdsi/BigKnn",
-      "Hash": "132dcdd31bbc081e9194bb460b23463c"
+      "Hash": "49727f32b4f572807adb966a98c17fef"
     },
     "R6": {
       "Package": "R6",
