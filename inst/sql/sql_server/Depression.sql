@@ -29,11 +29,11 @@ WHERE E.concept_id is null
 ) C UNION ALL 
 SELECT 7 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (21604690)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (21604686)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (21604690)
+  and ca.ancestor_concept_id in (21604686)
   and c.invalid_reason is null
 
 ) I
@@ -51,11 +51,11 @@ UNION  select c.concept_id
 ) C UNION ALL 
 SELECT 9 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4030840,2795842,2795675,4327941,45887950)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (4030840,2795842,2795675,4327941,45887951)
 UNION  select c.concept_id
   from @vocabulary_database_schema.CONCEPT c
   join @vocabulary_database_schema.CONCEPT_ANCESTOR ca on c.concept_id = ca.descendant_concept_id
-  and ca.ancestor_concept_id in (4030840,2795842,2795675,4327941,45887950)
+  and ca.ancestor_concept_id in (4030840,2795842,2795675,4327941,45887951)
   and c.invalid_reason is null
 
 ) I
